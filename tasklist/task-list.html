@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task-list.css">
+</head>
+<body>
+  <div class="wraper">
+  <button class ="side-panel-btn">  <span></span></button>
+  <div class="side-panel">
+    <div class="task-dashboard">
+    <h1 class="task-dashboard-title">Task DashBoard</h1>
+      
+      <section class="side-panel-stats-container">
+        <h4>Quick Stats</h4>
+          <div class="panel-stats">
+              <div class="stat-item">
+                  <div class="stat-number" data-total="0" id="totalTasks">0</div>
+                  <div class="stat-label">Total</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number" id="pendingTasks">0</div>
+                  <div class="stat-label">Pending</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number" id="completedTasks">0</div>
+                  <div class="stat-label">Completed</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number" id="overdueTasks">0</div>
+                  <div class="stat-label">Overdue</div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="side-panel-actions-container">
+        <div class="panel-actions">
+                <h4>Quick actions</h4>
+                <div class="panel-mark-all">
+                    Mark All
+                    <span></span>
+                    <div class="set-status-panel">
+                        <button class="mark-all-btn">Complete</button>
+                        <button class="umark-all-btn">Unfinished</button>
+                    </div>
+                </div>
+                <div class="panel-clear-all">
+                    <span></span>
+                    Clear Tasks
+                    <div class="clear-task-panel">
+                        <button class="clear-complete-btn">Completed</button>
+                        <button class="clear-incomplete-btn">Unfinished</button>
+                        <button class="clear-all-btn">All</button>
+                    </div>
+                </div>
+                <button class="save-task">Save</button>
+                
+        </div>
+      </section>
+
+</div>
+      
+  </div>
+  
+   <div class="task-list">
+  <div class="task-header">
+    <div>Task</div>
+    <div>Due</div>
+    <div>Status</div>
+    <div>Actions</div>
+    <div class = "create-task">&#43;</div>
+  </div>
+  
+
+
+  
+  </div>
+    <script type="module" src="task-list.js"></script>
+</body>
+</html>

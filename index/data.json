@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Online Journal",
+        "description": "Online Journal app",
+        "link": "../Journal/OnlineJournal.html"
+    },
+    {
+        "name": "Task List",
+        "description": "An task list",
+        "link": "../tasklist/task_list.html"
+    }
+]
