@@ -6,8 +6,8 @@ const rightArrow = document.querySelector('.right-arrow');
 
 
 const API_URLS = [
-    "http://localhost:3000/redirect/protected/Journal",
-    "http://localhost:3000/redirect/protected/tasklist",
+    "https://crud-backend-cerb.onrender.com/redirect/protected/Journal",
+    "https://crud-backend-cerb.onrender.com/redirect/protected/tasklist",
 ]
 
 

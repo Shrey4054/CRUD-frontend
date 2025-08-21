@@ -5,7 +5,7 @@ const login = document.querySelector('.form')
 
 
 
-const API_URL = "http://localhost:3000/Auth/action"
+const API_URL = "https://crud-backend-cerb.onrender.com/"
 const headers = {'Content-Type': 'application/json'}
 
 login.addEventListener('submit', async (event) =>{

@@ -7,7 +7,7 @@ const downloadButton = document.getElementById('download_button')
 const titleArea = document.getElementById('titleArea')
 const entriesPanel = document.getElementById('entries')
 
-const API_URL = "http://localhost:3000/journal/action"
+const API_URL = "https://crud-backend-cerb.onrender.com/journal/action"
 const headers = {'Content-Type': 'application/json'}
 
 import popup from "./popup.js"
