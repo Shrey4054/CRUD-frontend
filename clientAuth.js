@@ -86,8 +86,5 @@ function validPassword(){
 }
 
 
-const warning = () =>{
-     alert("This site is not properly secure, do not use actual credentials")
-}
-warning()
+
      
