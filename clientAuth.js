@@ -18,7 +18,8 @@ login.addEventListener('submit', async (event) =>{
    const response = await fetch(API_URL,{
         method: "POST",
         headers: headers,
-        body: JSON.stringify({"email": emailValue , "password": passwordValue}) //encrypted value
+        body: JSON.stringify({"email": emailValue , "password": passwordValue}), //encrypted value
+        credentials: "include"
    })
   
 
