@@ -8,7 +8,8 @@ export async function deleteTask(task){
         const result = await fetch(APILink+"delete",{
             method: 'POST',
             headers: {'content-type': 'application/json'},
-            body: JSON.stringify({content: task})
+            body: JSON.stringify({content: task}),
+            credentials: "include"
             
         })
     }catch (err){
@@ -27,7 +28,8 @@ export async function updateDescription(task) {
         const result = await fetch(APILink+"update/description",{
             method: 'PATCH',
             headers: {'content-type': 'application/json'},
-            body: JSON.stringify({content: task})
+            body: JSON.stringify({content: task}),
+            credentials: "include"
             
         })
     }catch (err){
@@ -45,7 +47,8 @@ export async function updateDueDate(task) {
         const result = await fetch(APILink+"update/dueDate",{
             method: 'PATCH',
             headers: {'content-type': 'application/json'},
-            body: JSON.stringify({content: task})
+            body: JSON.stringify({content: task}),
+            credentials: "include"
             
         })
     }catch (err){
@@ -63,7 +66,8 @@ export async function updateStatus(task) {
         const result = await fetch(APILink+"update/status",{
             method: 'PATCH',
             headers: {'content-type': 'application/json'},
-            body: JSON.stringify({content: task})
+            body: JSON.stringify({content: task}),
+            credentials: "include"
             
         })
     }catch (err){

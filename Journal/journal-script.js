@@ -66,7 +66,8 @@ async function saveEntry(paramTitle){
         method,
         headers: headers,
         credentials: "include" ,
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
+        credentials: "include"
     })   
     if (response.ok){
         console.log(response.status)
@@ -128,7 +129,11 @@ saveButton.addEventListener('click', async () => {
 
 async function loadEntries (){
     try{
-    const res = await fetch(API_URL)
+    const res = await fetch(API_URL, 
+        {
+            credentials: "include"
+        }
+    )
     const data = await res.json()
 
     data.sort((a,b) => {return b.date - a.date})
@@ -171,7 +176,8 @@ async function loadEntries (){
                     const response = await fetch(API_URL,  {
                         method: 'DELETE',
                         headers: headers,
-                        body : JSON.stringify({id : element.id })
+                        body : JSON.stringify({id : element.id }),
+                        credentials: "include"
 
                     })
 

@@ -105,6 +105,7 @@ const populatePreviousTasks = async () => {
         const response = await fetch(APILink+'retrieve', {
         method: 'GET',
         headers: headers,
+        credentials: "include"
     })
     if (response.ok){
         const tasks = await response.json()
@@ -158,7 +159,8 @@ saveTasks.addEventListener('click', async () => {
     const response = await fetch(APILink+'save', {
         method : 'POST',
         headers : headers,
-        body: JSON.stringify({ content: taskData })
+        body: JSON.stringify({ content: taskData }),
+        credentials: "include"
     })
     if (response.ok){
         console.log("saved successfully")

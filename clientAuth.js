@@ -47,7 +47,8 @@ register.addEventListener('click', async () => {
           const response = await fetch(`${API_URL}/register`, {
                method: "POST",
                headers: headers,
-               body : JSON.stringify({"email" : email.value.trim(), "password": password.value})
+               body : JSON.stringify({"email" : email.value.trim(), "password": password.value}),
+               credentials: "include"
           })
           if(response.status === 200){
                const parsed = await response.json()

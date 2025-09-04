@@ -19,7 +19,8 @@ list.forEach((element, index) => {
         const API_URL = API_URLS[index]
         const response =  await fetch(API_URL, {
             method: "POST",
-            headers:  {'Content-Type': 'application/json'}
+            headers:  {'Content-Type': 'application/json'},
+            credentials: "include"
         })
         if(response.ok){
             const parsed = await response.json()
