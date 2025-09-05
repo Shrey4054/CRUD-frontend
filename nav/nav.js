@@ -16,6 +16,7 @@ const API_URLS = [
 
 list.forEach((element, index) => {
     element.addEventListener('click', async () =>{
+        console.log("identify")
         const API_URL = API_URLS[index]
         const response =  await fetch(API_URL, {
             method: "POST",
