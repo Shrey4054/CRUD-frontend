@@ -50,7 +50,7 @@ async function saveEntry(paramTitle){
 
 
 
-    let method = journalState.currentId ? 'PUT' : "POST"
+    let methods = journalState.currentId ? 'PUT' : "POST"
 
     
     try{
@@ -63,7 +63,7 @@ async function saveEntry(paramTitle){
             body.id = journalState.currentId
         }
         const response  = await fetch( API_URL ,{
-        method,
+        method: methods,
         headers: headers,
         credentials: "include" ,
         body: JSON.stringify(body),
@@ -131,6 +131,8 @@ async function loadEntries (){
     try{
     const res = await fetch(API_URL, 
         {
+            method: 'GET',
+            headers: headers,
             credentials: "include"
         }
     )

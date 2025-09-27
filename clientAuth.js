@@ -34,7 +34,7 @@ login.addEventListener('submit', async (event) =>{
           appendErrors(msg)
           }
      
-})
+}) 
 
 register.addEventListener('click', async () => {
      
