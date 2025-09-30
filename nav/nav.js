@@ -1,8 +1,6 @@
 
 
 const list = document.querySelectorAll('.items-list li');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
 
 
 const API_URLS = [
